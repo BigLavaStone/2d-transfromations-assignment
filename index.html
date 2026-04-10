@@ -267,7 +267,7 @@
                 p.strokeWeight(2);
                 p.beginShape();
                 baseShape.forEach(pt => {
-                    p.vertex(pt.x, pt.y);
+                    p.vertex(pt.x + tx, pt.y + ty);
                 });
                 p.endShape(p.CLOSE);
             };
